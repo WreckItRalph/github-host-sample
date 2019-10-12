@@ -6,5 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'github-host-sample';
+
+  fillerNav = Array.from({length: 50}, (_, i) => `Nav Item ${i + 1}`);
 }

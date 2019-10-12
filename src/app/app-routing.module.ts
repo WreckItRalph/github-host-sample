@@ -1,8 +1,14 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+import { ContainerComponent } from './container/container.component';
 
 
-const routes: Routes = [];
+const routes: Routes = [
+  {
+    path: '',
+    loadChildren: () => import('./settings/settings.module').then(m => m.SettingsModule)
+  }
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

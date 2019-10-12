@@ -1,0 +1,17 @@
+<div class='px-5 mx-2 my-2'>
+    <mat-card>
+        <mat-card-subtitle>
+            Component {{id}}
+            <button class='buttonx' style='float:right' mat-button (click)='deleteComponent()'>
+                        <mat-icon>delete</mat-icon>
+                </button>
+
+
+        </mat-card-subtitle>
+        <mat-card-content>
+            <mat-form-field>
+                <input matInput placeholder='{{"Component "+id}}' />
+            </mat-form-field>
+        </mat-card-content>
+    </mat-card>
+</div>
